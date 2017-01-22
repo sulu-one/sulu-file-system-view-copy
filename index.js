@@ -6,7 +6,6 @@ var Command = function() {
 }
 
 Command.prototype.copy = function copy() {
-
  
 	var view = this.GUI.activeView().model;
 	var selectedFileSystemItems = view.selected();
@@ -24,7 +23,7 @@ Command.prototype.copy = function copy() {
 		this.dlg({polymerElementName: "polymer-cat", buttons: buttons}, function(){
 			if (this.result !== -1){
 				/*cp -R {copy,shell} c:\temp*/
-		  		var win = window.open("consoleWindow.html"); 
+		  		var win = window.open("packages/node_modules/sulu-file-system-view-copy/consoleWindow.html"); 
 				var started = false;
 		  		var readyEventListener = function (event) {
 			        if ( event.data === "rdy") {
@@ -85,7 +84,6 @@ Command.prototype.copy = function copy() {
 
 var Plugin = function  (client) {
 	this.command = new Command();
-	client.app.loadHTML(require("path").join(__dirname, "polymer-cat.html"));
 	client.app.registerHotKey("f5", this.command.copy);
 };
 
