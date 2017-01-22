@@ -20,6 +20,7 @@
   "homepage": "https://github.com/sulu-one/sulu-file-system-view-copy#readme",
   "dependencies": {
     "jquery": "^3.1.1",
+    "shelljs": "^0.7.6",
     "xterm": "^2.2.3"
   }
 }
