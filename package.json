@@ -1,5 +1,12 @@
 {
-  "suluPackage": true,
+  "suluPackage": {
+    "hotkeys" : [
+      {
+        "key" : "f5" , 
+        "function" : "copy"
+      }
+    ]
+  },
   "name": "sulu-file-system-view-copy",
   "description": "SULU copy file and folder functions",
   "version": "1.0.5",

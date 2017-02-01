@@ -83,8 +83,7 @@ Command.prototype.copy = function copy() {
 };
 
 var Plugin = function  (client) {
-	this.command = new Command();
-	client.app.registerHotKey("f5", this.command.copy);
+	this.command = new Command(); 
 };
 
 module.exports = Plugin;
